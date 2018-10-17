@@ -5,6 +5,8 @@ plugins {
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+apply plugin: 'application'
+mainClassName = "WebServer"
 
 repositories {
     mavenCentral()

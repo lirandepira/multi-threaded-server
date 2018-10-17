@@ -5,7 +5,7 @@ public class WebServer {
     public static void main(String[] args) throws Exception {
 
         // Open port for connection
-        ServerSocket serverSocket = new ServerSocket(2134);
+        ServerSocket serverSocket = new ServerSocket(8080);
         System.out.println("Port listening");
 
         // Manage multiple threads
