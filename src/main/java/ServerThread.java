@@ -17,9 +17,11 @@ public class ServerThread implements Runnable {
         while (true){
             try {
 
+                // listen for a connection
                 Socket socket = serverSocket.accept();
                 System.out.println("Connection accepted");
 
+                // Send data to the client
                 PrintWriter out = new PrintWriter(socket.getOutputStream());
 
                 out.println("HTTP/1.1 200 OK");
@@ -30,7 +32,7 @@ public class ServerThread implements Runnable {
 
                 out.close();
 
-                // This sleep is after the thread limit is succeeded
+                // This sleep is used after the thread limit is succeeded
                 Thread.sleep(60*1000);
 
             } catch (IOException | InterruptedException e) {
