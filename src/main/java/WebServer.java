@@ -4,7 +4,7 @@ public class WebServer {
 
     public static void main(String[] args) throws Exception {
 
-        ServerSocket serverSocket = new ServerSocket(8080);
+        ServerSocket serverSocket = new ServerSocket(2134);
         System.out.println("Port listening");
 
         for (int i = 0; i < 10; i++) {
